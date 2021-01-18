@@ -18,7 +18,6 @@ const ContactForm = ({ onAddItem }) => {
     const user = { id: uuidv4(), name: state.name, number: state.number };
 
     onAddItem(user);
-    setState({ ...initialState });
   };
   const { name, number } = state;
   return (
@@ -61,9 +60,6 @@ ContactForm.propTypes = {
 
 //   this.props.onAddItem(user);
 //   this.resetState();
-// };
-// resetState = () => {
-//   this.setState({ name: '', number: '' });
 // };
 //   render() {
 //     const { name, number } = this.state;
